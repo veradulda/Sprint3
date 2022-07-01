@@ -9,11 +9,11 @@ import java.util.concurrent.TimeUnit;
 
 public class Driver {
 
-    private WebDriver drv;
+    private static WebDriver drv;
 
     private Driver(){}
 
-    public WebDriver getDrv(){
+    public static WebDriver getDrv(){
 
         if(drv == null){
 
