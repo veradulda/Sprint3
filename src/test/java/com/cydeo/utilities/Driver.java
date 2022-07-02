@@ -46,8 +46,8 @@ public class Driver {
     public static void closeDriver(){
         System.out.println("CloseDriver Çalışıyor");
         if(drv != null){
-           // drv.close();
-            drv.quit();
+            drv.close();
+           //drv.quit();
             drv = null;
         }
     }

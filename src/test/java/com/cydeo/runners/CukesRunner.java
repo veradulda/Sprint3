@@ -9,7 +9,11 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "com/cydeo/step_definitions",
-        tags = ""
+        tags = "",
+        plugin = {
+                "html:target/cucumber-report.html",
+                "json:target/cucumber.json"
+        }
 
 )
 

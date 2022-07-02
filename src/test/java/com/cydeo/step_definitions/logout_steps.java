@@ -12,6 +12,7 @@ import org.openqa.selenium.WebDriver;
 
 public class logout_steps {
 
+
     @Given("User should be on dashboard page as login")
     public void user_should_be_on_dashboard_page_as_login() {
         logInPage logInPage = new logInPage();
