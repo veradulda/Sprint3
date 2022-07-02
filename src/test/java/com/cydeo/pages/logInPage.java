@@ -13,15 +13,15 @@ public class logInPage {
     }
 
     @FindBy(id ="user")
-    public static WebElement userNameInput;
+    public  WebElement userNameInput;
 
     @FindBy(id = "password")
-    public static WebElement passWordInput;
+    public  WebElement passWordInput;
 
     @FindBy(id = "submit-form")
-    public static WebElement LoginBtn;
+    public  WebElement LoginBtn;
 
-    public static void LogInByDefaultData(){
+    public  void LogInByDefaultData(){
         Driver.getDrv().get( propertiesReader.getProperty("url") );
         userNameInput.sendKeys(propertiesReader.getProperty("defaultUserName"));
         passWordInput.sendKeys(propertiesReader.getProperty("defaultPassWord"));
