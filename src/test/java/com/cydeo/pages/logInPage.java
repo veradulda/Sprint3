@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class logInPage {
 
     public logInPage() {
@@ -20,6 +22,18 @@ public class logInPage {
 
     @FindBy(id = "submit-form")
     public WebElement LoginBtn;
+
+    @FindBy(xpath = "//p[@class='warning wrongPasswordMsg']")
+    public  WebElement AlertForInvalidData;
+
+    @FindBy(xpath = "//a[@class = 'toggle-password']")
+    public  WebElement EyeIcon;
+
+    @FindBy(xpath = "//a[@id = 'lost-password']")
+    public  WebElement ForgetPassBtn;
+
+
+
 
     public void LogInByDefaultData(){
         Driver.getDrv().get( propertiesReader.getProperty("url") );

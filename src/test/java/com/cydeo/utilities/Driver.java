@@ -17,7 +17,6 @@ public class Driver {
 
         if(drv == null){
 
-            propertiesReader propertiesReader = new propertiesReader();
             String browser = propertiesReader.getProperty("Browser");
 
             switch (browser){
